@@ -1,2 +1,2 @@
-# ready-ßmail
+# ready-mail
 Ready to use email templates!
