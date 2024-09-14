@@ -1,5 +1,5 @@
 {
-  "name": "@repo/database",
+  "name": "@ready-mail/database",
   "version": "1.0.0",
   "exports": {
     ".": "./src/client.ts"
@@ -8,7 +8,7 @@
     "db:migrate:deploy": "prisma migrate deploy",
     "db:migrate:dev": "prisma migrate dev",
     "db:push": "prisma db push",
-    "db:seed": "tsx src/seed.ts",
+    "db:seed": "tsx src/seed/index.ts",
     "dev": "tsup src/* --watch",
     "format": "prisma format",
     "generate": "prisma generate",
@@ -21,8 +21,8 @@
     "@prisma/client": "^5.10.2"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@ready-mail/eslint-config": "workspace:*",
+    "@ready-mail/typescript-config": "workspace:*",
     "eslint": "^8.57.0",
     "prisma": "^5.10.2",
     "rimraf": "^5.0.5",

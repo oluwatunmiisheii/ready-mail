@@ -1,9 +1,10 @@
 {
-  "extends": "@repo/typescript-config/nextjs.json",
+  "extends": "@ready-mail/typescript-config/nextjs.json",
   "compilerOptions": { "plugins": [{ "name": "next" }] },
   "include": [
     "next-env.d.ts",
-    "next.config.js",
+    "next.config.mjs",
+    "postcss.config.mjs",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
