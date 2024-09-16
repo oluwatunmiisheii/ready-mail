@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "prisma": {
+    "schema": "packages/database/prisma/schema.prisma",
+    "seed": "tsx packages/database/src/seed.ts"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "db:migrate:deploy": "turbo run db:migrate:deploy",
+    "db:push": "turbo run db:push",
+    "db:seed": "turbo run db:seed",
+    "dev": "turbo run dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "generate": "turbo run generate",
+    "lint": "turbo run lint",
+    "prepare": "husky",
+    "ui": "pnpm --filter @ready-mail/ui ui"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@commitlint/types": "^19.5.0",
+    "@types/node": "^20.11.24",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.2.5",
+    "prisma": "5.10.2",
+    "tsx": "^4.7.1",
+    "turbo": "^2.1.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "name": "ready-mail",
+  "dependencies": {
+    "@prisma/client": "5.10.2"
+  },
+  "packageManager": "pnpm@9.7.1"
+}
