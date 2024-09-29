@@ -11,21 +11,23 @@ generator client {
 }
 
 model Collection {
-  id          String     @id @default(auto()) @map("_id") @db.ObjectId
-  name        String     @unique
-  slug        String     @unique
-  description String?
-  createdAt   DateTime   @default(now())
-  updatedAt   DateTime   @updatedAt
-  Template    Template[]
+  id               String     @id @default(auto()) @map("_id") @db.ObjectId
+  name             String     @unique
+  slug             String     @unique
+  shortDescription String
+  description      String?
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
+  Template         Template[]
 }
 
 model Template {
   id           String     @id @default(auto()) @map("_id") @db.ObjectId
-  name         String     @unique
-  slug         String     @unique
+  name         String
+  slug         String
   description  String?
   html         String
+  json         Json
   collection   Collection @relation(fields: [collectionId], references: [id])
   collectionId String     @db.ObjectId
   createdAt    DateTime   @default(now())
