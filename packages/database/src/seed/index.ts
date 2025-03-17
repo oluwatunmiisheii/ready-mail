@@ -3,6 +3,8 @@ import { collections } from "./collections.seed";
 
 (async () => {
   try {
+    await prisma.collection.deleteMany();
+
     await Promise.all([
       prisma.collection.createMany({
         data: collections,

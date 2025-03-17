@@ -3,80 +3,29 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --background: 0 0% 100%;
-        --foreground: 222.2 47.4% 11.2%;
+	:root {
+		--neutral-50: 218 17% 91%;
+		--neutral-75: 226 45% 96%;
+		--neutral-100: 226 20% 94%;
+		--neutral-200: 226 17% 91%;
+		--neutral-300: 226 16% 84%;
+		--neutral-400: 218 15% 65%;
+		--neutral-500: 226 13% 46%;
+		--neutral-600: 218 18% 34%;
+		--neutral-700: 217 24% 27%;
+		--neutral-800: 219 33% 17%;
+		--neutral-900: 218 43% 11%;
 
-        --muted: 210 40% 96.1%;
-        --muted-foreground: 215.4 16.3% 46.9%;
-
-        --popover: 0 0% 100%;
-        --popover-foreground: 222.2 47.4% 11.2%;
-
-        --border: 214.3 31.8% 91.4%;
-        --input: 214.3 31.8% 91.4%;
-
-        --card: 0 0% 100%;
-        --card-foreground: 222.2 47.4% 11.2%;
-
-        --primary: 222.2 47.4% 11.2%;
-        --primary-foreground: 210 40% 98%;
-
-        --secondary: 210 40% 96.1%;
-        --secondary-foreground: 222.2 47.4% 11.2%;
-
-        --accent: 210 40% 96.1%;
-        --accent-foreground: 222.2 47.4% 11.2%;
-
-        --destructive: 0 100% 50%;
-        --destructive-foreground: 210 40% 98%;
-
-        --ring: 215 20.2% 65.1%;
-
-        --radius: 0.5rem;
-    }
-
-    .dark {
-        --background: 224 71% 4%;
-        --foreground: 213 31% 91%;
-
-        --muted: 223 47% 11%;
-        --muted-foreground: 215.4 16.3% 56.9%;
-
-        --accent: 216 34% 17%;
-        --accent-foreground: 210 40% 98%;
-
-        --popover: 224 71% 4%;
-        --popover-foreground: 215 20.2% 65.1%;
-
-        --border: 216 34% 17%;
-        --input: 216 34% 17%;
-
-        --card: 224 71% 4%;
-        --card-foreground: 213 31% 91%;
-
-        --primary: 210 40% 98%;
-        --primary-foreground: 222.2 47.4% 1.2%;
-
-        --secondary: 222.2 47.4% 11.2%;
-        --secondary-foreground: 210 40% 98%;
-
-        --destructive: 0 63% 31%;
-        --destructive-foreground: 210 40% 98%;
-
-        --ring: 216 34% 17%;
-
-        --radius: 0.5rem;
-    }
-}
-
-@layer base {
-    * {
-        @apply border-border;
-    }
-
-    body {
-        @apply bg-background text-foreground;
-        font-feature-settings: "rlig" 1, "calt" 1;
-    }
+		--primary-50: 211 81% 94%;
+		--primary-75: 16 92% 88%;
+		--primary-100: 17 94% 80%;
+		--primary-200: 218 17% 91%;
+		--primary-300: 17 92% 63%;
+		--primary-400: 16 91% 57%;
+		--primary-500: 212 82% 47%;
+		--primary-600: 16 89% 42%;
+		--primary-700: 16 92% 35%;
+		--primary-800: 16 97% 28%;
+		--primary-900: 218 43% 11%;
+	}
 }

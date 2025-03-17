@@ -3,5 +3,14 @@
     {
       "mode": "auto"
     }
-  ]
+  ],
+  "editor.detectIndentation": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.useEditorConfig": false,
+  "prettier.printWidth": 80,
+  "prettier.useTabs": true,
+  "prettier.tabWidth": 4,
+  "prettier.arrowParens": "always",
+  "files.insertFinalNewline": true
 }
