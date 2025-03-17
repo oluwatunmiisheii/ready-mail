@@ -49,12 +49,14 @@ export function Header() {
 							</Link>
 						</div>
 					</nav>
-					<Button
-						variant="black"
-						className="hidden h-10 font-semibold sm:block"
-					>
-						Get Started
-					</Button>
+					<Link href={siteConfig.baseLinks.collections}>
+						<Button
+							variant="black"
+							className="hidden h-10 font-semibold sm:block"
+						>
+							Get Started
+						</Button>
+					</Link>
 					<Button
 						onClick={() => setOpen(!open)}
 						variant="outline-black"
