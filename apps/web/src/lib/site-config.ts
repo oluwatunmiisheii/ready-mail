@@ -14,6 +14,7 @@ export const siteConfig = {
         linkedin: "#",
         instagram: "#",
         email: "#",
+        github: "https://github.com/oluwatunmiisheii/ready-mail",
     },
 };
 

@@ -5,6 +5,8 @@ import Image from "next/image";
 import { Button } from "@ready-mail/ui/components";
 import { ArrowRight, Github } from "lucide-react";
 import NotionMagicLinkEmail from "./email-template";
+import { siteConfig } from "../../../lib/site-config";
+import Link from "next/link";
 
 export function Hero() {
 	const fadeInUp = {
@@ -114,10 +116,12 @@ export function Hero() {
 						<Button variant="black">View Templates</Button>
 					</motion.div>
 					<motion.div variants={fadeInUp}>
-						<Button variant="outline-black">
-							<Github className="w-6 h-6 mr-2" />
-							Star on Github
-						</Button>
+						<Link href={siteConfig.socials.github} target="_blank">
+							<Button variant="outline-black">
+								<Github className="w-6 h-6 mr-2" />
+								Star on Github
+							</Button>
+						</Link>
 					</motion.div>
 				</div>
 			</motion.div>
