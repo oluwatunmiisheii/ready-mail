@@ -21,13 +21,13 @@ export const Footer = () => {
 			<hr className="my-6 border-t border-gray-800 h-px" />
 			<Section className="py-0">
 				<div className="text-center">
-					<p className="text-neutral-400 text-sm">
+					<div className="text-neutral-400 text-sm">
 						© {new Date().getFullYear()} Ready Mail. All rights
 						reserved.{" "}
 						<div className="inline-flex items-center">
 							Built with<div className="pl-1"></div>
 						</div>
-					</p>
+					</div>
 				</div>
 			</Section>
 		</footer>
