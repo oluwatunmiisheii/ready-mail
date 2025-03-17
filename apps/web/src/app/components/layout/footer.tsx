@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary-900 py-12">
-      <Section className="!py-0">
+    <footer className="bg-gray-900 py-12">
+      <Section className="py-0">
         <nav className="flex justify-between items-center text-neutral-400 text-sm">
           <h1>logo</h1>
           <ul className="flex space-x-8">
@@ -18,8 +18,8 @@ export const Footer = () => {
           </ul>
         </nav>
       </Section>
-      <hr className="my-6 border-t border-neutral-800 h-px" />
-      <Section className="!py-0">
+      <hr className="my-6 border-t border-gray-800 h-px" />
+      <Section className="py-0">
         <div className="text-center">
           <p className="text-neutral-400 text-sm">
             © {new Date().getFullYear()} Ready Mail. All rights

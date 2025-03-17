@@ -1,51 +1,86 @@
 "use client";
-import { Section } from "../section/section";
-import React, { useEffect } from "react";
-import { cn } from "@ready-mail/ui/lib/utils";
+
+import { siteConfig } from "../../../lib/site-config";
+import { useScroll } from "../../hooks/use-scroll";
 import Link from "next/link";
+import React from "react";
+import { Button } from "@ready-mail/ui/components";
+import { cn } from "@ready-mail/ui/lib/utils";
+import { MenuIcon, XIcon } from "lucide-react";
 
-export const Header = () => {
-  const [isScrolled, setIsScrolled] = React.useState(false);
-
-  // on scroll add some classes to the header
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (typeof window === "undefined") return;
-
-      if (window.scrollY > 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+export function Header() {
+  const [open, setOpen] = React.useState(false);
+  const scrolled = useScroll(15);
 
   return (
     <header
-      className={cn("h-[70px] sticky top-0 z-50", {
-        "bg-white backdrop-blur-[60px]": isScrolled,
-      })}
+      className={cn(
+        "fixed top-4 z-50 mx-auto flex justify-center rounded-lg py-3 transition duration-300",
+        scrolled || open
+          ? "border-gray-200/50 bg-white/80 shadow-2xl shadow-black/5 backdrop-blur-sm px-3 inset-x-4 max-w-6xl"
+          : "bg-white/0 border-b border-gray-100 rounded-none inset-x-0 w-full",
+      )}
     >
-      <Section className="py-0 h-full">
-        <nav className="flex justify-between items-center h-full">
-          <h1>logo</h1>
-          <ul className="flex space-x-8">
-            <li>
-              <Link href="/templates">Templates</Link>
+      <div className="md:my-auto max-w-6xl w-full px-3">
+        <div className="relative flex items-center justify-between w-full">
+          <Link href={siteConfig.baseLinks.home} aria-label="Home">
+            <span className="sr-only">Solar Tech Logo</span>
+            Logo
+          </Link>
+          <nav className="hidden sm:block md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
+            <div className="flex items-center gap-10 font-medium">
+              <Link className="px-2 py-1 text-gray-900" href="#solutions">
+                Blog
+              </Link>
+              <Link className="px-2 py-1 text-gray-900" href="#farm-management">
+                Templates
+              </Link>
+              <Link className="px-2 py-1 text-gray-900" href="#solar-analytics">
+                Collections
+              </Link>
+            </div>
+          </nav>
+          <Button
+            variant="black"
+            className="hidden h-10 font-semibold sm:block"
+          >
+            Get Started
+          </Button>
+          <Button
+            onClick={() => setOpen(!open)}
+            variant="outline-black"
+            className="p-1.5 sm:hidden"
+            aria-label={open ? "CloseNavigation Menu" : "Open Navigation Menu"}
+          >
+            {!open ? (
+              <MenuIcon className="size-6 shrink-0 text-gray-900" aria-hidden />
+            ) : (
+              <XIcon className="size-6 shrink-0 text-gray-900" aria-hidden />
+            )}
+          </Button>
+        </div>
+        <nav
+          className={cn(
+            "mt-6 flex flex-col gap-6 text-lg ease-in-out will-change-transform sm:hidden",
+            open ? "" : "hidden",
+          )}
+        >
+          <ul className="space-y-4 font-medium">
+            <li onClick={() => setOpen(false)}>
+              <Link href="#solutions">Blog</Link>
             </li>
-            <li>
-              <Link href="/collections">Collections</Link>
+            <li onClick={() => setOpen(false)}>
+              <Link href="#farm-management">Templates</Link>
+            </li>
+            <li onClick={() => setOpen(false)}>
+              <Link href="#solar-analytics">Collection</Link>
             </li>
           </ul>
+          <Button variant="black" className="text-lg">
+            Get Started
+          </Button>
         </nav>
-      </Section>
+      </div>
     </header>
   );
-};
+}
