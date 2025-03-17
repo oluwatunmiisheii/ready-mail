@@ -51,7 +51,7 @@ export function Hero() {
 			initial={{ opacity: 0, y: -20 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-			className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 relative"
+			className="max-w-6xl mx-auto px-4 py-16 sm:px-6 lg:px-8 relative"
 		>
 			<div className="text-center mb-8">
 				<motion.span

@@ -1,9 +1,10 @@
-import React from "react";
+import { Section } from "../../components/section/section";
+import { CollectionGrid } from "./_components/collection-grid";
 
 export default function Page() {
-  return (
-    <div>
-      <h1>Collections</h1>
-    </div>
-  );
+	return (
+		<Section>
+			<CollectionGrid />
+		</Section>
+	);
 }
