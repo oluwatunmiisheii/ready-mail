@@ -19,17 +19,28 @@ export const Footer = () => {
 				</nav>
 			</Section>
 			<hr className="my-6 border-t border-gray-800 h-px" />
-			<Section className="py-0">
-				<div className="text-center">
-					<div className="text-neutral-400 text-sm">
-						© {new Date().getFullYear()} Ready Mail. All rights
-						reserved.{" "}
-						<div className="inline-flex items-center">
-							Built with<div className="pl-1"></div>
-						</div>
-					</div>
+			<div className="mx-auto mb-10 mt-10 flex flex-col justify-between text-center text-xs md:max-w-7xl">
+				<div
+					className="flex flex-row items-center justify-center gap-1 
+                text-slate-400"
+				>
+					<span> © </span>
+					<span>{new Date().getFullYear()}</span>
+					<span>Made with</span>
+					❤️
+					<span> by </span>
+					<span className="cursor-pointer text-white">
+						<Link
+							aria-label="Logo"
+							className="font-bold"
+							href="https://github.com/oluwatunmiisheii"
+							target="_blank"
+						>
+							Wilson Adenuga {""}
+						</Link>
+					</span>
 				</div>
-			</Section>
+			</div>
 		</footer>
 	);
 };
