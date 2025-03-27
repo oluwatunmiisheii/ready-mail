@@ -15,10 +15,10 @@ export function Header() {
 	return (
 		<header
 			className={cn(
-				"fixed top-4 z-50 mx-auto flex justify-center rounded-lg py-3 transition duration-300",
+				"fixed top-0 z-50 mx-auto flex justify-center rounded-lg py-3 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
 				scrolled || open
-					? "border border-gray-200/50 bg-white/80 shadow-2xl shadow-black/5 backdrop-blur-sm px-3 inset-x-4 max-w-6xl"
-					: "bg-white/0 border-b border-gray-100 rounded-none inset-x-0 w-full"
+					? "border border-gray-200/50 bg-white/80 shadow-2xl shadow-black/5 backdrop-blur-sm px-3 inset-x-4 max-w-6xl top-4"
+					: "bg-white border-b border-gray-100 rounded-none inset-x-0 w-full"
 			)}
 		>
 			<div className="md:my-auto max-w-6xl w-full px-3">
