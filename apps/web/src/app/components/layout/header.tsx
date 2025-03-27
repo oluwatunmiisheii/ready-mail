@@ -15,9 +15,9 @@ export function Header() {
 	return (
 		<header
 			className={cn(
-				"fixed top-0 z-50 mx-auto flex justify-center rounded-lg py-3 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
+				"z-50 transform-gpu animate-slide-down-fade mx-auto flex justify-center rounded-lg py-3 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
 				scrolled || open
-					? "border border-gray-200/50 bg-white/80 shadow-2xl shadow-black/5 backdrop-blur-sm px-3 inset-x-4 max-w-6xl top-4"
+					? "border border-gray-200/50 bg-white/80 shadow-2xl shadow-black/5 backdrop-blur-sm px-3 inset-x-4 max-w-6xl fixed top-4"
 					: "bg-white border-b border-gray-100 rounded-none inset-x-0 w-full"
 			)}
 		>

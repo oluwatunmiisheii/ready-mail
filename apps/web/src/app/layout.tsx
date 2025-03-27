@@ -13,7 +13,7 @@ export default function RootLayout({
 		<html lang="en" className={`${inter.variable} ${sora.variable}`}>
 			<body className="flex flex-col min-h-screen overflow-x-hidden">
 				<Header />
-				<main className="flex-grow pt-16">{children}</main>
+				<main className="flex-grow">{children}</main>
 				<Footer />
 			</body>
 		</html>
