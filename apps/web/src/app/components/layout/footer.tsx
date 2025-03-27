@@ -2,12 +2,13 @@ import React from "react";
 import { Section } from "../section/section";
 import Link from "next/link";
 import { Github } from "lucide-react";
+import { Button } from "@ready-mail/ui/components";
 
 export const Footer = () => {
 	return (
 		<footer className="bg-white py-12">
 			<Section className="py-0">
-				<nav className="grid grid-cols-1 md:grid-cols-2 text-gray-700 text-sm">
+				<nav className="grid grid-cols-1 md:grid-cols-2 text-gray-700 text-sm items-center">
 					<div className="col-span-1">
 						<h1 className="text-2xl">logo</h1>
 						<p className="text-gray-500 mt-4">
@@ -17,7 +18,9 @@ export const Footer = () => {
 							email templates and get started.
 						</p>
 					</div>
-					<div></div>
+					<div className="flex justify-end">
+						<Button variant="black">Star On Github</Button>
+					</div>
 				</nav>
 			</Section>
 			<hr className="my-6 border-t border-gray-50 h-px" />

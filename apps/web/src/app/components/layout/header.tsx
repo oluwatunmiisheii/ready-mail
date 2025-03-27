@@ -4,7 +4,7 @@ import { siteConfig } from "../../../lib/site-config";
 import { useScroll } from "../../hooks/use-scroll";
 import Link from "next/link";
 import React from "react";
-import { Button } from "@ready-mail/ui/components";
+import { Badge, Button } from "@ready-mail/ui/components";
 import { cn } from "@ready-mail/ui/lib/utils";
 import { MenuIcon, XIcon } from "lucide-react";
 
@@ -26,6 +26,9 @@ export function Header() {
 					<Link href={siteConfig.baseLinks.home} aria-label="Home">
 						<span className="sr-only">Solar Tech Logo</span>
 						Logo
+						<Badge className="ml-2 px-1.5 text-[9px] absolute bottom-4">
+							Open Source
+						</Badge>
 					</Link>
 					<nav className="hidden sm:block md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
 						<div className="flex items-center gap-10 font-medium">

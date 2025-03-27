@@ -118,7 +118,7 @@ export const CollectionGrid = () => {
 					>
 						<div className="relative z-10 mt-0 block h-full w-full overflow-hidden transition-all duration-[180ms] ease-in-out rounded-lg bg-white px-4 pt-5 pb-[18px] shadow-[inset_0_0_0_1px] shadow-gray-200">
 							<div className="relative">
-								<div className="absolute -left-4 h-5 w-[3px] rounded-r-sm bg-gray-500"></div>
+								<div className="absolute -left-4 h-5 w-[3px] rounded-r-sm bg-primary-500"></div>
 								<h3 className="font-medium text-gray-900">
 									{collection.name}
 								</h3>

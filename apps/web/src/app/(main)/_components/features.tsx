@@ -15,36 +15,36 @@ const features = [
 		title: "Copy & Paste Ready",
 		description:
 			"Clean HTML templates that work instantly across email clients.",
-		icon: <ClipboardCopy className="size-5 text-gray-500" />,
+		icon: <ClipboardCopy className="size-5 text-primary-500" />,
 	},
 	{
 		title: "Responsive Design",
 		description:
 			"Templates that look great on all devices and screen sizes.",
-		icon: <Layout className="size-5 text-gray-500" />,
+		icon: <Layout className="size-5 text-primary-500" />,
 	},
 	{
 		title: "Fast Integration",
 		description:
 			"Easy integration with your favorite email service providers.",
-		icon: <Zap className="size-5 text-gray-500" />,
+		icon: <Zap className="size-5 text-primary-500" />,
 	},
 	{
 		title: "Save Time",
 		description: "Focus on your core product instead of designing emails.",
-		icon: <Clock className="size-5 text-gray-500" />,
+		icon: <Clock className="size-5 text-primary-500" />,
 	},
 	{
 		title: "Tested & Reliable",
 		description:
 			"Templates tested across major email clients for compatibility.",
-		icon: <Shield className="size-5 text-gray-500" />,
+		icon: <Shield className="size-5 text-primary-500" />,
 	},
 	{
 		title: "Customizable",
 		description:
 			"Easy to customize with clearly marked variable placeholders.",
-		icon: <Sparkles className="size-5 text-gray-500" />,
+		icon: <Sparkles className="size-5 text-primary-500" />,
 	},
 ];
 
@@ -90,7 +90,7 @@ export const Features = () => {
 						<div className="relative z-10 mt-0 block h-full w-full overflow-hidden transition-all duration-[180ms] ease-in-out rounded-lg rounded-tr-[26px] bg-white px-4 pt-5 pb-[18px] shadow-[inset_0_0_0_1px] shadow-gray-200 before:absolute before:top-0 before:right-0 before:z-3 before:h-[30px] before:w-[30px] before:-translate-y-1/2 before:translate-x-1/2 before:rotate-45 before:bg-gray-50 before:shadow-[0_1px_0_0_] before:shadow-gray-200 before:transition-all before:duration-[180ms] before:ease-in-out before:content-[''] after:absolute after:top-0 after:right-0 after:z-2 after:size-7 after:-translate-y-2 after:translate-x-2 after:rounded-bl-lg after:border after:bg-gray-50 after:shadow-xs after:transition-all after:duration-[180ms] after:ease-in-out after:content-[''] hover:rounded-tr-[45px] hover:before:h-[50px] hover:before:w-[50px] hover:after:h-[42px] hover:after:w-[42px] hover:after:shadow-lg hover:after:shadow-black/5">
 							<div>
 								<div className="relative flex items-center gap-2">
-									<div className="absolute -left-4 h-5 w-[3px] rounded-r-sm bg-gray-500"></div>
+									<div className="absolute -left-4 h-5 w-[3px] rounded-r-sm bg-primary-500"></div>
 									{feature.icon}
 									<h3 className="font-medium text-gray-900">
 										{feature.title}
