@@ -13,15 +13,15 @@ export function Header() {
 	const scrolled = useScroll(15);
 
 	return (
-		<header
-			className={cn(
-				"z-50 transform-gpu animate-slide-down-fade mx-auto flex justify-center rounded-lg py-3 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
-				scrolled || open
-					? "border border-gray-200/50 bg-white/80 shadow-2xl shadow-black/5 backdrop-blur-sm px-3 inset-x-4 max-w-6xl fixed top-4"
-					: "bg-white border-b border-gray-100 rounded-none inset-x-0 w-full"
-			)}
-		>
-			<div className="md:my-auto max-w-6xl w-full px-3">
+		<header className="border-b border-gray-100">
+			<div
+				className={cn(
+					"z-50 mx-auto flex max-w-6xl transform-gpu animate-slide-down-fade justify-center overflow-hidden px-3 py-3 rounded-xl transition-all border border-transparent duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
+					scrolled || open
+						? "backdrop-blur-nav max-w-5xl border border-gray-100 bg-white/80 shadow-xl shadow-black/5 fixed inset-x-3 top-4"
+						: "bg-white/0"
+				)}
+			>
 				<div className="relative flex items-center justify-between w-full">
 					<Link href={siteConfig.baseLinks.home} aria-label="Home">
 						<span className="sr-only">Solar Tech Logo</span>
