@@ -66,7 +66,7 @@ export function Header() {
 						className="p-1.5 sm:hidden"
 						aria-label={
 							open
-								? "CloseNavigation Menu"
+								? "Close Navigation Menu"
 								: "Open Navigation Menu"
 						}
 					>
