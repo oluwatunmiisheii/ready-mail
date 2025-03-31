@@ -1,5 +1,5 @@
 import React from "react";
 
 export const collections = () => {
-	return <div>collections</div>;
+  return <div>collections</div>;
 };
