@@ -13,7 +13,7 @@ export function Header() {
 	const scrolled = useScroll(15);
 
 	return (
-		<header className="border-b border-gray-100">
+		<header>
 			<div
 				className={cn(
 					"z-50 mx-auto flex max-w-6xl transform-gpu animate-slide-down-fade justify-center overflow-hidden px-3 py-3 rounded-xl transition-all border border-transparent duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
@@ -100,9 +100,7 @@ export function Header() {
 							<Link href="#solar-analytics">Collection</Link>
 						</li>
 					</ul>
-					<Button variant="black" className="text-lg">
-						Get Started
-					</Button>
+					<Button variant="black">Get Started</Button>
 				</nav>
 			</div>
 		</header>
