@@ -29,7 +29,7 @@ const buttonVariants = cva(
 		},
 		defaultVariants: {
 			variant: "primary",
-			size: "lg",
+			size: "default",
 		},
 	}
 );
