@@ -49,6 +49,7 @@ export const Collections = () => {
 						<Link href="/collections">
 							<Button variant="black">
 								View All Collections
+								<ArrowRight className="w-4 h-4 ml-2" />
 							</Button>
 						</Link>
 					</motion.div>

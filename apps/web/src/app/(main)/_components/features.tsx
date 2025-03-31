@@ -15,36 +15,36 @@ const features = [
 		title: "Copy & Paste Ready",
 		description:
 			"Clean HTML templates that work instantly across email clients.",
-		icon: <ClipboardCopy className="size-5 text-gray-500" />,
+		icon: <ClipboardCopy className="size-5 text-gray-900" />,
 	},
 	{
 		title: "Responsive Design",
 		description:
 			"Templates that look great on all devices and screen sizes.",
-		icon: <Layout className="size-5 text-gray-500" />,
+		icon: <Layout className="size-5 text-gray-900" />,
 	},
 	{
 		title: "Fast Integration",
 		description:
 			"Easy integration with your favorite email service providers.",
-		icon: <Zap className="size-5 text-gray-500" />,
+		icon: <Zap className="size-5 text-gray-900" />,
 	},
 	{
 		title: "Save Time",
 		description: "Focus on your core product instead of designing emails.",
-		icon: <Clock className="size-5 text-gray-500" />,
+		icon: <Clock className="size-5 text-gray-900" />,
 	},
 	{
 		title: "Tested & Reliable",
 		description:
 			"Templates tested across major email clients for compatibility.",
-		icon: <Shield className="size-5 text-gray-500" />,
+		icon: <Shield className="size-5 text-gray-900" />,
 	},
 	{
 		title: "Customizable",
 		description:
 			"Easy to customize with clearly marked variable placeholders.",
-		icon: <Sparkles className="size-5 text-gray-500" />,
+		icon: <Sparkles className="size-5 text-gray-900" />,
 	},
 ];
 

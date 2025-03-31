@@ -4,7 +4,7 @@ import { siteConfig } from "../../../lib/site-config";
 import { useScroll } from "../../hooks/use-scroll";
 import Link from "next/link";
 import React from "react";
-import { Button } from "@ready-mail/ui/components";
+import { Badge, Button } from "@ready-mail/ui/components";
 import { cn } from "@ready-mail/ui/lib/utils";
 import { MenuIcon, XIcon } from "lucide-react";
 
@@ -13,19 +13,22 @@ export function Header() {
 	const scrolled = useScroll(15);
 
 	return (
-		<header
-			className={cn(
-				"fixed top-4 z-50 mx-auto flex justify-center rounded-lg py-3 transition duration-300",
-				scrolled || open
-					? "border border-gray-200/50 bg-white/80 shadow-2xl shadow-black/5 backdrop-blur-sm px-3 inset-x-4 max-w-6xl"
-					: "bg-white/0 border-b border-gray-100 rounded-none inset-x-0 w-full"
-			)}
-		>
-			<div className="md:my-auto max-w-6xl w-full px-3">
+		<header>
+			<div
+				className={cn(
+					"z-50 mx-auto flex max-w-6xl transform-gpu animate-slide-down-fade justify-center overflow-hidden px-3 py-3 rounded-xl transition-all border border-transparent duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
+					scrolled || open
+						? "backdrop-blur-nav max-w-5xl border border-gray-100 bg-white/80 shadow-xl shadow-black/5 fixed inset-x-3 top-4"
+						: "bg-white/0"
+				)}
+			>
 				<div className="relative flex items-center justify-between w-full">
 					<Link href={siteConfig.baseLinks.home} aria-label="Home">
 						<span className="sr-only">Solar Tech Logo</span>
 						Logo
+						<Badge className="ml-2 px-1.5 text-[9px] absolute bottom-4">
+							Open Source
+						</Badge>
 					</Link>
 					<nav className="hidden sm:block md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
 						<div className="flex items-center gap-10 font-medium">
@@ -97,9 +100,7 @@ export function Header() {
 							<Link href="#solar-analytics">Collection</Link>
 						</li>
 					</ul>
-					<Button variant="black" className="text-lg">
-						Get Started
-					</Button>
+					<Button variant="black">Get Started</Button>
 				</nav>
 			</div>
 		</header>
