@@ -16,7 +16,7 @@ export function Header() {
 		<header>
 			<div
 				className={cn(
-					"z-50 mx-auto flex max-w-6xl transform-gpu animate-slide-down-fade justify-center overflow-hidden px-3 py-3 rounded-xl transition-all border border-transparent duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
+					"z-50 mx-auto flex max-w-6xl transform-gpu animate-slide-down-fade justify-center overflow-hidden px-3 py-3 rounded-lg transition-all border border-transparent duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
 					scrolled || open
 						? "backdrop-blur-nav max-w-5xl border border-gray-100 bg-white/80 shadow-xl shadow-black/5 fixed inset-x-3 top-4"
 						: "bg-white/0"
