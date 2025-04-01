@@ -6,7 +6,7 @@ export const ExploreTemplates = () => {
 	return (
 		<div className="relative h-[140vh]">
 			<Section
-				className="h-full bg-cover bg-no-repeat grayscale bg-bottom absolute inset-0"
+				className="h-full bg-cover bg-no-repeat grayscale bg-bottom absolute inset-0 max-w-full"
 				style={{
 					backgroundImage: "url('/images/explore-templates.png')",
 				}}
