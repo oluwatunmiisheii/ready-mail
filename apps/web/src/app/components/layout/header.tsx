@@ -26,7 +26,7 @@ export function Header() {
 					<Link href={siteConfig.baseLinks.home} aria-label="Home">
 						<span className="sr-only">Solar Tech Logo</span>
 						Logo
-						<Badge className="ml-2 px-1.5 text-[9px] absolute bottom-4">
+						<Badge className="ml-2 px-1.5 text-[9px] absolute bottom-4 bg-[#e4bdfd] text-gray-800">
 							Open Source
 						</Badge>
 					</Link>
@@ -54,7 +54,7 @@ export function Header() {
 					</nav>
 					<Link href={siteConfig.baseLinks.collections}>
 						<Button
-							variant="black"
+							variant="primary"
 							className="hidden h-10 font-semibold sm:block"
 						>
 							Get Started

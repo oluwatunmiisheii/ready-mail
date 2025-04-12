@@ -76,7 +76,7 @@ export function Hero() {
 						}}
 						className="text-3xl md:text-[42px] font-medium text-gray-900 mb-4 tracking-tight md:leading-[48px]"
 					>
-						Build Faster with Ready To Use <br /> Email Templates 🚀
+						Build Faster With Ready To Use <br /> Email Templates 🚀
 					</motion.h1>
 					<motion.p
 						initial={{ opacity: 0 }}
@@ -115,7 +115,7 @@ export function Hero() {
 					</div>
 					<div className="flex justify-center gap-3 mb-12">
 						<motion.div variants={fadeInUp}>
-							<Button variant="black">View Templates</Button>
+							<Button>View Templates</Button>
 						</motion.div>
 						<motion.div variants={fadeInUp}>
 							<Link
