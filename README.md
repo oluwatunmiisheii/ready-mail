@@ -1,110 +1,69 @@
-# Turborepo starter
+<a href="https://dub.co">
+  <img alt="Dub.co is the open-source link management infrastructure for modern marketing teams." src="https://github.com/dubinc/dub/assets/28986134/3815d859-afaa-48f9-a9b3-c09964e4d404">
+</a>
 
-This is an official starter turborepo.
+<h3 align="center">Dub.co</h3>
 
-## Using this example
+<p align="center">
+    The open-source link attribution platform.
+    <br />
+    <a href="https://dub.co"><strong>Learn more »</strong></a>
+    <br />
+    <br />
+    <a href="#introduction"><strong>Introduction</strong></a> ·
+    <a href="#features"><strong>Features</strong></a> ·
+    <a href="#tech-stack"><strong>Tech Stack</strong></a> ·
+</p>
 
-Run the following command:
+<p align="center">
+  <a href="https://twitter.com/dubdotco">
+    <img src="https://img.shields.io/twitter/follow/dubdotco?style=flat&label=%40dubdotco&logo=twitter&color=0bf&logoColor=fff" alt="Twitter" />
+  </a>
+  <a href="https://news.ycombinator.com/item?id=32939407"><img src="https://img.shields.io/badge/Hacker%20News-255-%23FF6600" alt="Hacker News"></a>
+  <a href="https://github.com/dubinc/dub/blob/main/LICENSE.md">
+    <img src="https://img.shields.io/github/license/dubinc/dub?label=license&logo=github&color=f80&logoColor=fff" alt="License" />
+  </a>
+</p>
 
-```sh
-npx create-turbo@latest -e redy-mail
-```
+<br/>
 
-## What's inside?
+## Introduction
 
-This turborepo includes the following packages/apps:
+Dub.co is the open-source link attribution platform for modern marketing teams.
 
-### Apps and Packages
+## Features
 
-- `web`: a [Next.js](https://nextjs.org/) app
-- `@ready-mail/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@ready-mail/database`: [Prisma](https://prisma.io/) ORM wrapper to manage & access your database
-- `@ready-mail/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- **Free custom domains**: Create branded short links [with your own domain](https://dub.co/help/article/how-to-add-custom-domain) and [improve click-through rates by 30%](https://dub.co/blog/custom-domains). Paid plans also include a [complimentary custom domain](https://dub.co/help/article/free-dot-link-domain).
+- **Advanced link features**: Supercharge your links with [custom link previews](https://dub.co/help/article/custom-link-previews), [device targeting](https://dub.co/help/article/device-targeting), [geo targeting](https://dub.co/help/article/geo-targeting), [link cloaking](https://dub.co/help/article/link-cloaking), [password protection](https://dub.co/help/article/password-protected-links), and more.
+- **Advanced Analytics**: Dub provides [powerful analytics](https://dub.co/analytics) for your links, including geolocation, device, browser, and referrer information.
+- **QR Codes**: QR codes and short links are like peas in a pod. Dub offers [free QR codes](https://dub.co/tools/qr-code) for every short link you create. Feeling artsy? [Customize them with your own logo](https://dub.co/help/article/custom-qr-codes).
+- **Team collaboration**: [Invite your teammates](https://dub.co/help/article/how-to-invite-teammates) to collaborate on your links. For [enterprises](https://dub.co/enterprise), Dub offers [SAML SSO](https://dub.co/help/category/saml-sso) with Okta, Google, and Azure AD for higher security.
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## Tech Stack
 
-### Utilities
+- [Next.js](https://nextjs.org/) – framework
+- [TypeScript](https://www.typescriptlang.org/) – language
+- [Tailwind](https://tailwindcss.com/) – CSS
+- [Upstash](https://upstash.com/) – redis
+- [Tinybird](https://tinybird.com/) – analytics
+- [PlanetScale](https://planetscale.com/) – database
+- [NextAuth.js](https://next-auth.js.org/) – auth
+- [BoxyHQ](https://boxyhq.com/enterprise-sso) – SSO/SAML
+- [Turborepo](https://turbo.build/repo) – monorepo
+- [Resend](https://resend.com/) – emails
+- [Vercel](https://vercel.com/) – deployments
 
-This turborepo has some additional tools already setup for you:
+## Self-Hosting
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-- [Prisma](https://prisma.io/) for database ORM
-- [Docker Compose](https://docs.docker.com/compose/) for local database
+You can self-host Dub.co for greater control over your data and design. [Read this guide](https://dub.co/docs/self-hosting/guide) to learn more.
 
-### Database
+## Contributing
 
-We use [Prisma](https://prisma.io/) to manage & access our database. As such you will need a database for this project, either locally or hosted in the cloud.
+We love our contributors! Here's how you can contribute:
 
-To make this process easier, we offer a [`docker-compose.yml`](https://docs.docker.com/compose/) file to deploy a MySQL server locally with a new database named `turborepo` (To change this update the `MYSQL_DATABASE` environment variable in the `docker-compose.yml` file):
+- [Open an issue](https://github.com/dubinc/dub/issues) if you believe you've encountered a bug.
+- Make a [pull request](https://github.com/dubinc/dub/pull) to add new features/make quality-of-life improvements/fix bugs.
 
-```bash
-cd my-turborepo
-docker-compose up -d
-```
+## License
 
-Once deployed you will need to copy the `.env.example` file to `.env` in order for Prisma to have a `DATABASE_URL` environment variable to access.
-
-```bash
-cp .env.example .env
-```
-
-If you added a custom database name, or use a cloud based database, you will need to update the `DATABASE_URL` in your `.env` accordingly.
-
-Once deployed & up & running, you will need to create & deploy migrations to your database to add the necessary tables. This can be done using [Prisma Migrate](https://www.prisma.io/migrate):
-
-```bash
-npx prisma migrate dev
-```
-
-If you need to push any existing migrations to the database, you can use either the Prisma db push or the Prisma migrate deploy command(s):
-
-```bash
-yarn run db:push
-
-# OR
-
-yarn run db:migrate:deploy
-```
-
-There is slight difference between the two commands & [Prisma offers a breakdown on which command is best to use](https://www.prisma.io/docs/concepts/components/prisma-migrate/db-push#choosing-db-push-or-prisma-migrate).
-
-An optional additional step is to seed some initial or fake data to your database using [Prisma's seeding functionality](https://www.prisma.io/docs/guides/database/seed-database).
-
-To do this update check the seed script located in `packages/database/src/seed.ts` & add or update any users you wish to seed to the database.
-
-Once edited run the following command to run tell Prisma to run the seed script defined in the Prisma configuration:
-
-```bash
-yarn run db:seed
-```
-
-For further more information on migrations, seeding & more, we recommend reading through the [Prisma Documentation](https://www.prisma.io/docs/).
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```bash
-yarn run build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```bash
-yarn run dev
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+Inspired by [Plausible](https://plausible.io/), Dub is open-source under the GNU Affero General Public License Version 3 (AGPLv3) or any later version. You can [find it here](https://github.com/dubinc/dub/blob/main/LICENSE.md).
