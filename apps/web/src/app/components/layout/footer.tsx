@@ -18,7 +18,7 @@ export const Footer = () => {
 							email templates and get started.
 						</p>
 					</div>
-					<div className="flex justify-end">
+					<div className="justify-end hidden">
 						<Button variant="black">Star On Github</Button>
 					</div>
 				</nav>

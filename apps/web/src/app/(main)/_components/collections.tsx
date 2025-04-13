@@ -1,5 +1,5 @@
 "use client";
-import { AnimatePresence, motion } from "motion/react";
+import { motion } from "motion/react";
 import React from "react";
 import { Section } from "../../components/section/section";
 import { ArrowRight } from "lucide-react";
@@ -13,7 +13,7 @@ export const Collections = () => {
 			initial={{ opacity: 0, y: -20 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-			className="bg-gray-50 w-full"
+			className="w-full bg-gray-50"
 		>
 			<Section>
 				<div className="text-center">
@@ -31,29 +31,27 @@ export const Collections = () => {
 					</h2>
 				</div>
 				<CollectionGrid />
-				<AnimatePresence mode="wait">
-					<motion.div
-						variants={{
-							hidden: { opacity: 0, y: 20 },
-							visible: {
-								opacity: 1,
-								y: 0,
-								transition: {
-									duration: 0.5,
-									ease: [0.22, 1, 0.36, 1],
-								},
+				<motion.div
+					variants={{
+						hidden: { opacity: 0, y: 20 },
+						visible: {
+							opacity: 1,
+							y: 0,
+							transition: {
+								duration: 0.5,
+								ease: [0.22, 1, 0.36, 1],
 							},
-						}}
-						className="flex justify-center mt-8"
-					>
-						<Link href="/collections">
-							<Button variant="ghost">
-								View All Collections
-								<ArrowRight className="w-4 h-4 ml-2" />
-							</Button>
-						</Link>
-					</motion.div>
-				</AnimatePresence>
+						},
+					}}
+					className="flex justify-center mt-8"
+				>
+					<Link href="/collections">
+						<Button>
+							View All Collections
+							<ArrowRight className="w-4 h-4 ml-2" />
+						</Button>
+					</Link>
+				</motion.div>
 			</Section>
 		</motion.div>
 	);
