@@ -82,7 +82,7 @@ export function Hero() {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.4, duration: 0.8 }}
-						className="max-w-2xl mx-auto text-lg text-gray-600"
+						className="max-w-2xl mx-auto text-lg text-gray-600 tracking-tight"
 					>
 						Spend less time designing email templates and more time
 						coding. Copy, tweak, and send professional emails
@@ -133,7 +133,9 @@ export function Hero() {
 						</motion.div>
 					</div>
 				</motion.div>
-				<div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f9fafb_1px,transparent_1px),linear-gradient(to_bottom,#f9fafb_1px,transparent_1px)] bg-[size:6rem_4rem]" />
+				<div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f9fafb_1px,transparent_1px),linear-gradient(to_bottom,#f9fafb_1px,transparent_1px)] bg-[size:6rem_4rem]">
+					<div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-[#e4bdfd] opacity-20 blur-[100px]"></div>
+				</div>
 			</motion.div>
 			<motion.div
 				className="bg-white rounded-xl shadow-xl overflow-hidden max-w-3xl mx-auto border border-gray-200 -mt-12"
