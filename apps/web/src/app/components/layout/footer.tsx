@@ -45,6 +45,14 @@ export const Footer = () => {
 									Collections
 								</Link>
 							</li>
+							<li>
+								<Link
+									href={siteConfig.baseLinks.changelog}
+									className="text-gray-500 font-normal"
+								>
+									Changelog
+								</Link>
+							</li>
 						</ul>
 						<ul className="col-span-2 md:col-span-1 place-items-center md:place-items-start space-y-2.5">
 							<li className="text-gray-900">Legal</li>
