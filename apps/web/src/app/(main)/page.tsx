@@ -5,13 +5,13 @@ import { Hero } from "./_components/hero";
 import { WallOfLove } from "./_components/wall-of-love";
 
 export default function HomePage() {
-  return (
-    <>
-      <Hero />
-      <Features />
-      <Collections />
-      <WallOfLove />
-      <CTA />
-    </>
-  );
+	return (
+		<>
+			<Hero />
+			<Features />
+			<Collections />
+			<WallOfLove />
+			<CTA />
+		</>
+	);
 }
