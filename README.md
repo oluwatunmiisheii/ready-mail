@@ -15,8 +15,6 @@
 
 ## Introduction
 
-## Introduction
-
 Designing emails doesn’t have to be hard. Ready Mail makes it effortless to create stunning, responsive emails—no coding required. With an intuitive visual editor and powerful collaboration features, you can focus on your message and your brand, not the technical details.  
 Export production-ready HTML and use it with any email provider or platform.
 Future releases will introduce advanced features like email workflows, tracking, audience management, and more.
