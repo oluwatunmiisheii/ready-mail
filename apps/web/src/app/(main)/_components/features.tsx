@@ -1,104 +1,125 @@
 "use client";
+import { cn } from "@ready-mail/ui/lib/utils";
 import {
+  ArrowRight,
   ClipboardCopy,
   Clock,
   Layout,
   Shield,
-  Sparkles,
   Zap,
 } from "lucide-react";
 import { Section } from "../../components/section/section";
 import { motion } from "motion/react";
 
-const features = [
-  {
-    title: "Copy & Paste Ready",
-    description:
-      "Clean HTML templates that work instantly across email clients.",
-    icon: <ClipboardCopy className="size-5 text-[#5858e0]" />,
-  },
-  {
-    title: "Responsive Design",
-    description: "Templates that look great on all devices and screen sizes.",
-    icon: <Layout className="size-5 text-[#5858e0]" />,
-  },
-  {
-    title: "Fast Integration",
-    description: "Easy integration with your favorite email service providers.",
-    icon: <Zap className="size-5 text-[#5858e0]" />,
-  },
-  {
-    title: "Save Time",
-    description: "Focus on your core product instead of designing emails.",
-    icon: <Clock className="size-5 text-[#5858e0]" />,
-  },
-  {
-    title: "Tested & Reliable",
-    description:
-      "Templates tested across major email clients for compatibility.",
-    icon: <Shield className="size-5 text-[#5858e0]" />,
-  },
-  {
-    title: "Customizable",
-    description: "Easy to customize with clearly marked variable placeholders.",
-    icon: <Sparkles className="size-5 text-[#5858e0]" />,
-  },
-];
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
+export function Features() {
+  const features = [
+    {
+      title: "Copy & Paste Ready",
+      description:
+        "Clean HTML templates that work instantly across email clients.",
+      icon: <ClipboardCopy />,
     },
-  },
-};
-
-const featureVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: "spring",
-      stiffness: 100,
-      damping: 15,
+    {
+      title: "Responsive Design",
+      description: "Templates that look great on all devices and screen sizes.",
+      icon: <Layout />,
     },
-  },
-};
-
-export const Features = () => {
+    {
+      title: "Fast Integration",
+      description:
+        "Easy integration with your favorite email service providers.",
+      icon: <Zap />,
+    },
+    {
+      title: "Save Time",
+      description: "Focus on your core product instead of designing emails.",
+      icon: <Clock />,
+    },
+    {
+      title: "Tested & Reliable",
+      description:
+        "Templates tested across major email clients for compatibility.",
+      icon: <Shield />,
+    },
+    {
+      title: "Dark Mode Support",
+      description: "Templates that look great in dark mode and light mode.",
+      icon: <ClipboardCopy />,
+    },
+    {
+      title: "Drag and Drop Editor",
+      description:
+        "Can't find a template you like? Use our drag and drop editor to create your own.",
+      icon: <ClipboardCopy />,
+    },
+    {
+      title: "Email Previews",
+      description:
+        "See how your email will look in different clients before sending.",
+      icon: <ClipboardCopy />,
+    },
+  ];
   return (
-    <Section className="pt-0 max-w-4xl">
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        className="grid grid-cols-1 grid-rows-2 gap-6 md:grid-cols-3 md:grid-rows-1"
-      >
-        {features.map((feature) => (
-          <motion.div
-            variants={featureVariants}
-            className="relative"
-            key={feature.title}
-          >
-            <div className="relative z-10 mt-0 block h-full w-full overflow-hidden transition-all duration-[180ms] ease-in-out rounded-lg rounded-tr-[26px] bg-white px-4 pt-5 pb-[18px] shadow-[inset_0_0_0_1px] shadow-gray-200 before:absolute before:top-0 before:right-0 before:z-3 before:h-[30px] before:w-[30px] before:-translate-y-1/2 before:translate-x-1/2 before:rotate-45 before:bg-gray-50 before:shadow-[0_1px_0_0_] before:shadow-gray-200 before:transition-all before:duration-[180ms] before:ease-in-out before:content-[''] after:absolute after:top-0 after:right-0 after:z-2 after:size-7 after:-translate-y-2 after:translate-x-2 after:rounded-bl-lg after:border after:bg-gray-50 after:shadow-xs after:transition-all after:duration-[180ms] after:ease-in-out after:content-[''] hover:rounded-tr-[45px] hover:before:h-[50px] hover:before:w-[50px] hover:after:h-[42px] hover:after:w-[42px] hover:after:shadow-lg hover:after:shadow-black/5">
-              <div>
-                <div className="relative flex items-center gap-2">
-                  <div className="absolute -left-4 h-5 w-[3px] rounded-r-sm bg-[#5858e0]"></div>
-                  {feature.icon}
-                  <h3 className="font-medium text-gray-900">{feature.title}</h3>
-                </div>
-                <p className="mt-2 text-gray-600 sm:text-sm">
-                  {feature.description}
-                </p>
-              </div>
-            </div>
-          </motion.div>
+    <Section className="pt-0">
+      <div className="text-center">
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          className="inline-block px-3 py-1 text-xs font-medium bg-gray-200/50 text-gray-800 rounded-full mb-3"
+        >
+          Features <ArrowRight className="w-4 h-4 inline-block" />
+        </motion.span>
+        <h2 className="mt-2 text-2xl font-medium tracking-tight text-balance text-gray-900 md:text-3xl">
+          Your email design toolkit
+        </h2>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 pt-0  mt-8">
+        {features.map((feature, index) => (
+          <FeatureCard key={feature.title} {...feature} index={index} />
         ))}
-      </motion.div>
+      </div>
     </Section>
+  );
+}
+
+const FeatureCard = ({
+  title,
+  description,
+  icon,
+  index,
+}: {
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+  index: number;
+}) => {
+  return (
+    <div
+      className={cn(
+        "flex flex-col border py-8 relative group/feature bg-gray-50",
+        index === 0 && "lg:rounded-tl-lg",
+        index === 4 && "lg:rounded-bl-lg",
+        index === 3 && "lg:rounded-tr-lg",
+        index === 7 && "lg:rounded-br-lg",
+      )}
+    >
+      {index < 4 && (
+        <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-100 pointer-events-none" />
+      )}
+      {index >= 4 && (
+        <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-neutral-100 pointer-events-none" />
+      )}
+      <div className="mb-4 relative z-10 px-10 text-[#5858e0]">{icon}</div>
+      <div className="text-lg font-bold mb-2 relative z-10 px-10">
+        <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 group-hover/feature:bg-[#5858e0] transition-all duration-200 origin-center" />
+        <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block font-medium text-gray-900">
+          {title}
+        </span>
+      </div>
+      <p className="text-gray-600 sm:text-sm max-w-xs relative z-10 px-10">
+        {description}
+      </p>
+    </div>
   );
 };

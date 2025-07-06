@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
 import { Button } from "@ready-mail/ui/components";
-import { ArrowRight, Github } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import NotionMagicLinkEmail from "./email-template";
 import { siteConfig } from "../../../lib/site-config";
 import Link from "next/link";
@@ -116,10 +116,10 @@ export function Hero() {
               <Button>View Templates</Button>
             </motion.div>
             <motion.div variants={fadeInUp}>
-              <Link href={siteConfig.socials.github} target="_blank">
+              <Link href={siteConfig.baseLinks.design}>
                 <Button variant="outline-black" className="bg-gray-100/70">
-                  <Github className="size-5 mr-1" />
-                  Star on Github
+                  Design your own
+                  <ArrowRight className="w-4 h-4 inline-block ml-1" />
                 </Button>
               </Link>
             </motion.div>

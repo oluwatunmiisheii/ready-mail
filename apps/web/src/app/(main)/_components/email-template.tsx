@@ -50,16 +50,12 @@ export const NotionMagicLinkEmail = () => (
         account.
       </Text>
       <Text style={footer}>
-        <Link
-          href="https://notion.so"
-          target="_blank"
-          style={{ ...link, color: "#898989" }}
-        >
-          ReadyMail.com
+        <Link href="#" style={{ ...link, color: "#898989" }}>
+          readymail.xyz
         </Link>
-        , the all-in-one-workspace
+        ,
         <br />
-        for your notes, tasks, wikis, and databases.
+        Made with ❤️ by the ReadyMail team
       </Text>
     </Container>
   </Section>

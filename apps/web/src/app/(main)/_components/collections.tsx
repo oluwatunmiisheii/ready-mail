@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "motion/react";
-import React from "react";
 import { Section } from "../../components/section/section";
 import { ArrowRight } from "lucide-react";
 import { CollectionGrid } from "../collections/_components/collection-grid";
@@ -26,7 +25,7 @@ export const Collections = () => {
             Collections <ArrowRight className="w-4 h-4 inline-block" />
           </motion.span>
           <h2 className="mt-2 text-2xl font-medium tracking-tight text-balance text-gray-900 md:text-3xl">
-            Explore our collections of ready to use templates
+            Templates that work out of the box
           </h2>
         </div>
         <CollectionGrid />
