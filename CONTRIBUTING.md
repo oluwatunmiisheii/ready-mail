@@ -58,7 +58,7 @@ Thanks for your interest in contributing to Ready Mail! We welcome contributions
 
 4. Set up environment variables:
    ```bash
-   cp .env.example .env.local
+   cp .env.example .env
    ```
    Fill in the required environment variables.
 
@@ -122,7 +122,7 @@ Thanks for your interest in contributing to Ready Mail! We welcome contributions
 - **Styling**: Tailwind CSS
 - **UI Components**: shadcn/ui
 - **Database**: Prisma with MongoDB
-- **Authentication**: Clerk
+- **Authentication**: NextAuth.js
 - **Monorepo**: Turborepo
 
 ### Code Style
@@ -146,7 +146,6 @@ When contributing new email templates:
 ```
 apps/
   web/          # Main Next.js application
-  api/          # API routes and backend logic
 packages/
   ui/           # Shared UI components
   config/       # Shared configuration
