@@ -1,37 +1,4 @@
-# Ready Mail
-
-> Free professional email templates with drag-and-drop builder. Use ready-made templates or create your own.
-
-Designing emails doesn't have to be hard. Ready Mail makes it effortless to create stunning, responsive emails—no coding required. With an intuitive visual editor and powerful collaboration features, you can focus on your message and your brand, not the technical details.
-
-## Features
-
-* **Visual email designer**: Notion-style block editor for building beautiful, responsive emails, no coding required (drag-and-drop interface coming soon).
-* **Reusable templates**: Save and reuse your favorite designs for faster creation.
-* **Export HTML**: Download production-ready HTML to use with your preferred email service.
-* **Preview & test**: See exactly how your emails will look on desktop and mobile.
-* **Flexible saving**: Start designing right away, log in when you want to save or reuse your designs later.
-* **No vendor lock-in**: Use your email provider, Ready Mail focuses on design, not sending.
-
-## Coming Soon
-
-* Email workflows and automation
-* Email tracking and analytics
-* Audience management and segmentation
-* Theme and branding tools
-
-## Tech Stack
-
-* Next.js – framework
-* TypeScript – language
-* Tailwind CSS – styling
-* shadcn/ui – UI components
-* Clerk – authentication and user management
-* Prisma – ORM
-* MongoDB – database
-* Turborepo – monorepo
-
-## Contributing
+# Contributing to Ready Mail
 
 Thanks for your interest in contributing to Ready Mail! We welcome contributions from developers of all skill levels.
 
@@ -39,8 +6,10 @@ Thanks for your interest in contributing to Ready Mail! We welcome contributions
 
 ### Prerequisites
 - Node.js (v18 or higher)
-- npm or yarn
+- pnpm (v9.7.1 or higher - we use pnpm for this project)
 - Git
+
+> **Note**: This project uses pnpm as the package manager. Please do not use npm or yarn as they may cause dependency conflicts.
 
 ### Local Development Setup
 
@@ -53,7 +22,7 @@ Thanks for your interest in contributing to Ready Mail! We welcome contributions
 
 3. Install dependencies:
    ```bash
-   npm install
+   pnpm install
    ```
 
 4. Set up environment variables:
@@ -64,7 +33,7 @@ Thanks for your interest in contributing to Ready Mail! We welcome contributions
 
 5. Start the development server:
    ```bash
-   npm run dev
+   pnpm dev
    ```
 
 ## How to Contribute
@@ -94,8 +63,8 @@ Thanks for your interest in contributing to Ready Mail! We welcome contributions
 
 3. Test your changes:
    ```bash
-   npm run test
-   npm run build
+   pnpm test
+   pnpm build
    ```
 
 4. Commit your changes:
@@ -116,14 +85,6 @@ Thanks for your interest in contributing to Ready Mail! We welcome contributions
    - Describe what you've changed and why
 
 ## Code Guidelines
-
-### Tech Stack
-- **Framework**: Next.js with TypeScript
-- **Styling**: Tailwind CSS
-- **UI Components**: shadcn/ui
-- **Database**: Prisma with MongoDB
-- **Authentication**: NextAuth.js
-- **Monorepo**: Turborepo
 
 ### Code Style
 - Use TypeScript for type safety
@@ -160,17 +121,14 @@ packages/
 
 ### Useful Commands
 ```bash
-npm run dev          # Start development server
-npm run build        # Build for production
-npm run test         # Run tests
-npm run lint         # Run ESLint
-npm run format       # Format code with Prettier
+pnpm dev          # Start development server
+pnpm build        # Build for production
+pnpm test         # Run tests
+pnpm lint         # Run ESLint
+pnpm format       # Format code with Prettier
+pnpm db:push      # Push database schema changes
+pnpm db:studio    # Open Prisma Studio (database GUI)
+pnpm db:generate  # Generate Prisma client
 ```
-
-## Questions?
-
-If you have questions about contributing, feel free to:
-- Open an issue with the "question" label
-- Reach out to the maintainers
 
 Thanks for helping make Ready Mail better for the developer community!
