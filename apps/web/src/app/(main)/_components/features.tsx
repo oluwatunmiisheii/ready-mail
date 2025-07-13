@@ -47,9 +47,9 @@ export function Features() {
       icon: <ClipboardCopy />,
     },
     {
-      title: "Drag and Drop Editor",
+      title: "Visual Editor",
       description:
-        "Can't find a template you like? Use our drag and drop editor to create your own.",
+        "Can't find a template you like? Use our visual editor to create your own.",
       icon: <ClipboardCopy />,
     },
     {

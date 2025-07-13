@@ -29,7 +29,8 @@
     "turbo": "^2.1.1"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=18",
+    "pnpm": ">=8.0.0"
   },
   "name": "ready-mail",
   "dependencies": {

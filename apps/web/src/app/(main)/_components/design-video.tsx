@@ -59,7 +59,10 @@ export const DesignVideo = () => {
             <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 z-30">
               <button
                 className="relative bg-white/95 group-hover:bg-white rounded-full p-3 group-hover:scale-110 transition-all duration-300 shadow-2xl backdrop-blur-sm border-2 border-white/20 group-hover:border-white/40"
-                onClick={() => setIsOpen(true)}
+                onClick={() => {
+                  alert("Design video is coming soon!"); // Placeholder for video functionality
+                  // setIsOpen(true);
+                }}
               >
                 <Play
                   className="size-8 text-gray-800 ml-1 group-hover:text-black transition-colors duration-300"
@@ -103,7 +106,6 @@ export const DesignVideo = () => {
                 height="100%"
                 src="https://www.youtube.com/embed/K9cvbXccxSo?si=USu6sWAChI5_eQdQ"
                 title="YouTube video player"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen

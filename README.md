@@ -21,12 +21,12 @@ Future releases will introduce advanced features like email workflows, tracking,
 
 ## Features
 
-* **Visual email designer**: Notion-style block editor for building beautiful, responsive emails, no coding required (drag-and-drop interface coming soon).
-* **Reusable templates**: Save and reuse your favorite designs for faster creation.
-* **Export HTML**: Download production-ready HTML to use with your preferred email service.
-* **Preview & test**: See exactly how your emails will look on desktop and mobile.
-* **Flexible saving**: Start designing right away, log in when you want to save or reuse your designs later.
-* **No vendor lock-in**: Use your email provider, Ready Mail focuses on design, not sending.
+-   **Visual email designer**: Notion-style block editor for building beautiful, responsive emails, no coding required (drag-and-drop interface coming soon).
+-   **Reusable templates**: Save and reuse your favorite designs for faster creation.
+-   **Export HTML**: Download production-ready HTML to use with your preferred email service.
+-   **Preview & test**: See exactly how your emails will look on desktop and mobile.
+-   **Flexible saving**: Start designing right away, log in when you want to save or reuse your designs later.
+-   **No vendor lock-in**: Use your email provider, Ready Mail focuses on design, not sending.
 
 > **Coming soon:**
 >

@@ -7,7 +7,7 @@ export const inter = Inter({
 });
 
 export const sora = Sora({
-  // weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   variable: "--sora",
   subsets: ["latin"],
   display: "swap",

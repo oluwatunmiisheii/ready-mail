@@ -9,44 +9,44 @@ import Link from "next/link";
 const testimonials = [
   {
     image:
-      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    text: "I'm blown away by the versatility of the components in this library. They make UI development a breeze!",
-    name: "Alice Johnson",
-    username: "@alicejohnson",
-    social: "#",
-  },
-  {
-    image:
       "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    text: "Using this component library has significantly speed up our development process. The quality and ease of integration are remarkable!",
+    text: "The design components in this library are top-notch! They have made our email campaigns look stunning and professional.",
     name: "David Smith",
     username: "@davidsmith",
     social: "#",
   },
   {
+    image:
+      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    text: "This component library has transformed our email design process. The components are not only beautiful but also incredibly easy to use. ",
+    name: "Alice Johnson",
+    username: "@alicejohnson",
+    social: "#",
+  },
+  {
     image: "https://i.imgur.com/kaDy9hV.jpeg",
-    text: "The components in this library are not just well-designed but also highly customizable. It's a developer's dream!",
+    text: "The attention to detail in this component library is impressive. It has saved us countless hours in design and development.",
     name: "Emma Brown",
     username: "@emmabrown",
     social: "#",
   },
   {
-    image: "https://i.imgur.com/cRwFxtE.png",
-    text: "I love  how intuitive and well-documented this component library is. It has significantly improved our UI consistency across projects.",
-    name: "James Wilson",
-    username: "@jameswilson",
-    social: "#",
-  },
-  {
     image: "https://i.imgur.com/TQIqsob.png",
-    text: "Implementing this component library was a game-changer for our team. It has elevated our product's UI to a whole new level!",
+    text: "I love how easy it is to customize the components in this library. It has made our email designs stand out from the crowd.",
     name: "Sophia Lee",
     username: "@sophialee",
     social: "#",
   },
   {
+    image: "https://i.imgur.com/cRwFxtE.png",
+    text: "This library has been a game-changer for our email marketing. The components are not only visually appealing but also highly functional.",
+    name: "James Wilson",
+    username: "@jameswilson",
+    social: "#",
+  },
+  {
     image: "https://i.imgur.com/3ROmJ0S.png",
-    text: "Using this library has been a game-changer for our product development.",
+    text: "The component library has exceeded our expectations. The designs are modern, sleek, and perfect for our brand.",
     name: "Michael Davis",
     username: "@michaeldavis",
     social: "#",
