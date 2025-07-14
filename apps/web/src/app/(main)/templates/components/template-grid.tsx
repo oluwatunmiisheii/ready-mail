@@ -25,7 +25,7 @@ export const TemplateGrid = () => {
                   alt={`Template ${index + 1}`}
                   width={500}
                   height={292}
-                  className="w-full h-full relative rounded-lg object-cover object-top"
+                  className="w-full h-full relative rounded-lg object-cover object-center"
                 />
               </div>
               <div className="absolute h-full w-full inset-0 bg-black/50 group-hover:opacity-100 opacity-0 transition-opacity duration-300 overflow-hidden hidden md:block">
