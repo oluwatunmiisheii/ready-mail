@@ -1,5 +1,5 @@
 <a href="https://www.readymail.xyz/">
-  <img alt="Ready Mail – Effortless Email Design" src="https://github.com/user-attachments/assets/c247ab84-595a-4300-b9b2-790980418b5c">
+  <img alt="Ready Mail – Effortless Email Design" src="https://github.com/user-attachments/assets/7d137bf3-066d-45e6-bd86-41a505c15ae1">
 </a>
 
 <h3 align="center">Ready Mail</h3>
